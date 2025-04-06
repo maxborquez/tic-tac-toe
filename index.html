@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TIC TAC TOE</h1>
+    </header>
+
+    <main>
+      <div id="head-board">
+        <h1 id="display-current">Player X starts</h1>
+      </div>
+
+      <div class="board">
+        <button id="btn00"></button>
+        <button id="btn10"></button>
+        <button id="btn20"></button>
+        <button id="btn01"></button>
+        <button id="btn11"></button>
+        <button id="btn21"></button>
+        <button id="btn02"></button>
+        <button id="btn12"></button>
+        <button id="btn22"></button>
+      </div>
+      <button id="reset">
+        <img src="icons/refresh.svg" alt="">
+      </button>
+      <dialog id="nameDialog" open>
+        <form method="dialog" id="dialogForm">
+          <div id="form-container">
+            <h2 id="dialogTitle">New game</h2>
+            <div class="name-row">
+              <label for="playerX">Player X name: </label>
+              <input type="text" id="playerX" name="playerX" />
+            </div>
+
+            <div class="name-row">
+              <label for="playerO">Player O name: </label>
+              <input type="text" id="playerO" name="playerO" />
+            </div>
+
+            <menu>
+              <button type="submit" id="ready">Ready</button>
+            </menu>
+          </div>
+        </form>
+      </dialog>
+    </main>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
